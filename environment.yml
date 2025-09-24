@@ -35,16 +35,6 @@ dependencies:
   - lightgbm
   - shap
   - optuna
-  # Graphs & utilities
-  - networkx
-  - requests
-  - beautifulsoup4
-  - lxml
-  - openpyxl
-  # Deep learning (PyTorch via conda; CPU build by default on conda-forge)
-  - pytorch
-  - torchvision
-  - torchaudio
   # Keep pip available for a couple of extras
   - pip
   - pip:
