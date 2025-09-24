@@ -1,0 +1,54 @@
+name: sci-ml
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  # Jupyter
+  - jupyterlab>=4
+  - ipykernel
+  - ipywidgets>=8
+  - nbconvert
+  - notebook
+  # Core scientific stack
+  - numpy
+  - scipy
+  - pandas
+  - polars
+  - pyarrow
+  - statsmodels
+  - sympy
+  - numba
+  - h5py
+  # Visualization
+  - matplotlib
+  - seaborn
+  - plotly
+  - altair
+  - vega_datasets
+  # Data engineering / performance
+  - dask
+  - joblib
+  - tqdm
+  # ML / classical
+  - scikit-learn
+  - xgboost
+  - lightgbm
+  - shap
+  - optuna
+  # Graphs & utilities
+  - networkx
+  - requests
+  - beautifulsoup4
+  - lxml
+  - openpyxl
+  # Deep learning (PyTorch via conda; CPU build by default on conda-forge)
+  - pytorch
+  - torchvision
+  - torchaudio
+  # Keep pip available for a couple of extras
+  - pip
+  - pip:
+      # TensorFlow CPU via pip tends to be more reliable on Binder than conda builds
+      - tensorflow-cpu>=2.17,<2.19
+      # Popular GBM alternative often easiest via pip
+      - catboost
